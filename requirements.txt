@@ -1,0 +1,28 @@
+# ============================================================
+# RoadDamage AI — Bengkulu  |  Python 3.11 (kompatibel)
+# Catatan: torch & torchvision dipasang dari indeks CPU agar
+# aplikasi dapat berjalan tanpa GPU. Jika CUDA tersedia,
+# lihat README bagian "Dukungan GPU".
+# ============================================================
+
+# Indeks tambahan untuk PyTorch build CPU
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# --- Inti Computer Vision / YOLO ---
+ultralytics>=8.1.47,<8.4.0
+torch>=2.1.0,<2.6.0
+torchvision>=0.16.0,<0.20.0
+opencv-python>=4.8.0,<4.11.0
+
+# --- Antarmuka Web & Visualisasi ---
+streamlit>=1.30.0,<1.50.0
+matplotlib>=3.7.0,<3.11.0
+plotly>=5.18.0,<6.0.0
+
+# --- Manipulasi Data & Citra ---
+numpy>=1.24.0,<2.2.0
+pandas>=2.0.0,<2.3.0
+Pillow>=10.0.0,<11.1.0
+
+# --- Pengujian ---
+pytest>=7.4.0,<8.4.0

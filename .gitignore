@@ -1,0 +1,113 @@
+# ============================================================
+# RoadDamage AI — Bengkulu  |  .gitignore
+# ============================================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+develop-eggs/
+pip-wheel-metadata/
+.installed.cfg
+MANIFEST
+
+# --- Virtual environment ---
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# --- Jupyter / IPython ---
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# --- Pengujian & cakupan ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# --- Streamlit ---
+.streamlit/secrets.toml
+
+# --- Dataset besar (JANGAN diunggah ke GitHub) ---
+data/images/
+data/labels/
+data/*.zip
+data/*.tar
+data/*.tar.gz
+data/*.7z
+dataset/
+datasets/
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.avi
+*.mov
+*.mkv
+# Tetap izinkan file panduan di folder data dan samples README
+!data/README.md
+!samples/README.md
+!samples/**/README.md
+
+# --- Bobot model besar (JANGAN diunggah ke GitHub) ---
+*.pt
+*.pth
+*.onnx
+*.engine
+*.mlmodel
+*.tflite
+*.weights
+models/*.pt
+models/*.pth
+# Tetap izinkan panduan bobot
+!models/README.md
+!models/*.yaml
+
+# --- Hasil deteksi / output sementara ---
+outputs/detections/*
+outputs/evaluation/*
+outputs/videos/*
+outputs/training/*
+runs/
+runs_*/
+!outputs/README.md
+!outputs/**/.gitkeep
+
+# --- File rahasia & konfigurasi sensitif ---
+*.env
+*.key
+*.pem
+secrets.json
+credentials.json
+config/local_settings.py
+
+# --- Editor / IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# --- Sistem operasi ---
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# --- Log ---
+*.log
+logs/
